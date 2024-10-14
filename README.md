@@ -79,7 +79,7 @@ python3 -m devgagan
 - create new web service make sure you must choose build type `Dokerfile` because in Koyeb as a default it is checked to `buildpacks` so you have to change that.
 - connect github and your repository
 - Click Deploy
-- Done ✅
+- Done✅
 
 ## Terms of USE / Modification 
 Visit [Terms](https://github.com/devgaganin/Save-Restricted-Content-Bot-Repo/blob/master/TERMS_OF_USE.md) and accept the guidelines.
