@@ -7,17 +7,17 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardBu
 
 # ------------------- Start-Buttons ------------------- #
 
-buttons = InlineKeyboardMarkup(
-    [
-        [InlineKeyboardButton("Join Channel", url="https://t.me/JarvisBotz")],
-    ]
-)
+#buttons = InlineKeyboardMarkup(
+#    [
+#        [InlineKeyboardButton("Join Channel", url="https://t.me/JarvisBotz")],
+#    ]
+#)
 
 @app.on_message(filters.command("start"))
 async def start(_, message):
-    join = await subscribe(_, message)
-    if join == 1:
-        return
+#    join = await subscribe(_, message)
+#    if join == 1:
+#        return
     await message.reply_photo(photo="https://graph.org/file/b0c891545d4adb77a4f95.jpg",
                               caption=script.START_TXT.format(message.from_user.mention), 
                               reply_markup=buttons)
