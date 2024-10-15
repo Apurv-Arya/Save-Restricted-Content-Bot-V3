@@ -7,11 +7,11 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardBu
 
 # ------------------- Start-Buttons ------------------- #
 
-#buttons = InlineKeyboardMarkup(
-#    [
-#        [InlineKeyboardButton("Join Channel", url="https://t.me/JarvisBotz")],
-#    ]
-#)
+buttons = InlineKeyboardMarkup(
+    [
+        [InlineKeyboardButton("Join Channel", url="https://t.me/JarvisBotz")],
+    ]
+)
 
 @app.on_message(filters.command("start"))
 async def start(_, message):
